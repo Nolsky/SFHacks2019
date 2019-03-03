@@ -17,8 +17,8 @@ db.all(query, [], (err, rows)=>{
     throw(err)
   }
   rows.forEach((row)=>{
-    console.log(row);
-  })
-})
+
+  });
+});
 
 module.exports = db;

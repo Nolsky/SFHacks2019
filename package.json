@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server/server.js",
+    "start": "nodemon server/server.js",
     "build": "webpack --watch"
   },
   "repository": {
@@ -31,6 +31,7 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
+    "chart.js": "^2.7.3",
     "express": "^4.16.4",
     "jquery": "^3.3.1",
     "react": "^16.8.3",
