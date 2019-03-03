@@ -11,12 +11,11 @@ let sqlite = require("../database/SQLiteDBHelper.js")
 //   next();
 // });
 
-app.get('/', (req, res)=>{
-  res.send("Hello world");
-  res.end();
-})
+app.get('/', (req, res)=> {res.sendFile(path.join(__dirname, "index.html"))});
 
-app.use('/wat', express.static(path.join(__dirname, "index.html")));
+// app.use(express.static("index"));
+
+app.use('/index', express.static(path.join(__dirname, "index.html")));
 
 
 app.listen(PORT, ()=>{
